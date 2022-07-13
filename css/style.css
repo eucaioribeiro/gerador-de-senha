@@ -33,24 +33,79 @@ h1#titulo{
     font-size: 20px;
 }
 
-#tamanho-senha{
+#tamanhoSenha{
     -webkit-appearance: none;
     height: 12px;
     border-radius: 20px;
+    margin-top: 10px;
 }
 
 button#gerar{   
+    font-size: 15px;
     font-weight: bold;
-    margin-top: 12px;
+    margin-top: 25px;
     border: none;
     background-color: rgb(0, 151, 0);
     height: 40px;
     border-radius: 8px;
     cursor: pointer;
+    color: white;
 }
 
 button#gerar:hover{
     background: rgb(0, 37, 0);
     transition: 0.3s;
     color: white;
+}
+
+.container-password{
+    display: flex;
+    max-width: 480px;
+    margin: 14px 0;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.senha-gerada{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+#senha{
+    display: flex;
+     color: white;
+     height: 50px;
+     max-width: 300px;
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 5px;
+     justify-content: center;
+     align-items: center;
+     transition: transform 0.5s;
+}
+
+#senha:hover{
+    transform: scale(1.10);
+}
+
+#cliqueParaCopiar{
+    color: white;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.container-password:hover #cliqueParaCopiar{
+    visibility: visible;
+    bottom: 50px;
+}
+
+.hide{
+    display: none;
 }
